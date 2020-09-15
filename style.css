@@ -188,10 +188,6 @@ footer a {
   color: #fff;
   display: inline-block;
   padding: 5px 30px;
-  
+  font-size: .7rem;
 }
 
-small {
-  font-size: .7rem;
-  padding: 10px;
-}
