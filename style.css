@@ -36,7 +36,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, .8);
   display: block;
 }
 
@@ -56,6 +56,41 @@ nav a:hover {
   nav ul {
     text-align: right;
     padding-right: 5rem;
+  }
+}
+
+/* ===========
+   HEAD STYLES
+   =========== */
+
+.head {
+  display: flex;
+  height: 559px;
+  background: url(pics/christopher-gower-m_HRfLhgABo-unsplash.jpg) no-repeat center / cover;
+}
+
+.market {
+  flex-basis: 25vw;
+  background-color: rgb(49, 35, 50, .55);
+  text-align: center;
+  padding: 30px;
+}
+
+.keyword {
+  color: rgba(255, 255, 255, .8);
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+
+.cover {
+  flex-basis: 75vw; 
+}
+
+@media (max-width: 480px) {
+  .market {
+    display: none;
   }
 }
 
