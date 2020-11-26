@@ -1,3 +1,14 @@
+/* =========
+   VARIABLES
+   ========= */
+:root {
+	--primary-font-color: #312332;
+	--secondary-font-color: #413136;
+	--light-font-color: rgba(178,172,186,1);
+}
+
+
+
 /* ==============
    GENERAL STYLES
    ============== */
@@ -21,22 +32,48 @@ img {
 /* =============
    HEADER STYLES
    ============= */
+
+.header {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 20px;
+	padding: 30px;
+	font-family: 'Great Vibes', serif;
+	font-size: 3.8rem;
+	color: var(--secondary-font-color);
+}
+
+h3 {
+	letter-spacing: .05rem;
+	color: var(--light-font-color);
+}
+
+
+/* =================
+   NAVIGATION STYLES
+   ================= */
+.navigation {
+	max-width: 1111px;
+	margin: 0 auto;
+}
+
 nav ul {
-  background-color: #312332;
   text-align: center;
 }
 
 nav li {
   font-family: 'Lora', sans-serif;
-  font-size: 1.4rem;
+  font-size: .9rem;
   line-height: 3rem;
   height: 3rem;
-  border-bottom: 1px solid #413136;
+  border-bottom: .8px dashed var(--secondary-font-color);
 }
 
 nav a {
   text-decoration: none;
-  color: rgba(255, 255, 255, .8);
+  color: var(--primary-font-color);
   display: block;
 }
 
@@ -54,52 +91,19 @@ nav a:hover {
   
   }
   nav ul {
-    text-align: right;
+    text-align: left;
     padding-right: 5rem;
   }
 }
 
-/* ===========
-   HEAD STYLES
-   =========== */
 
-.head {
-  display: flex;
-  height: 559px;
-  background: url(pics/christopher-gower-m_HRfLhgABo-unsplash.jpg) no-repeat center / cover;
-}
-
-.market {
-  flex-basis: 25vw;
-  background-color: rgb(49, 35, 50, .55);
-  text-align: center;
-  padding: 30px;
-}
-
-.keyword {
-  color: rgba(255, 255, 255, .8);
-  font-family: 'Merriweather', serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  letter-spacing: 2px;
-}
-
-.cover {
-  flex-basis: 75vw; 
-}
-
-@media (max-width: 480px) {
-  .market {
-    display: none;
-  }
-}
 
 /* ==============
    CONTENT STYLES
    ============== */
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1111px;
   margin: 0 auto;
 }
 
@@ -128,10 +132,10 @@ nav a:hover {
   padding-bottom: 10px;
 }
 
-h1 {
-  font-family: 'Lora', serif;
-  font-size: 1.3rem;
-  color: #312332;
+h2 {
+  font-family: 'Great Vibes', serif;
+  font-size: 1.5rem;
+  color: var(--secondary-font-color);
   margin: 10px 0 10px 0;
 }
 
@@ -182,10 +186,6 @@ td {
   border: 5px;
   border-color: #312332;
   border-radius: 50%;
-}
-
-h2 {
-  padding: 10px;
 }
 
 h3 {
