@@ -1,6 +1,7 @@
 /* =========
    VARIABLES
    ========= */
+
 :root {
 	--primary-font-color:      #312332;
 	--secondary-font-color:    #413136;
@@ -33,6 +34,25 @@ a {
 	color:                     var(--primary-font-color);
 }
 
+h2 {
+  font-family:               'Great Vibes', serif;
+  font-size:                 1.5rem;
+  color:                     var(--secondary-font-color);
+  margin:                    20px 0 10px 0;
+}
+
+h3 {
+	letter-spacing:            .05rem;
+	color:                     var(--light-font-color);
+  font-size:                 .7rem;
+  padding:                   10px;
+}
+
+p {
+  font-size:                 .85rem;
+  margin:                    10px 0 25px 0;
+}
+
 
 /* =============
    HEADER STYLES
@@ -50,15 +70,11 @@ h1 {
 	color:                     var(--secondary-font-color);
 }
 
-h3 {
-	letter-spacing:            .05rem;
-	color:                     var(--light-font-color);
-}
-
 
 /* =================
    NAVIGATION STYLES
    ================= */
+
 .navigation {
 	max-width:                 1111px;
 	margin:                    0 auto;
@@ -129,6 +145,11 @@ nav a {
   }
 }
 
+
+/* ==============
+   MAIN STYLES
+   ============== */
+
 .main {
   order:                     1;
   flex-basis:                75vw;
@@ -141,17 +162,34 @@ nav a {
   padding-bottom:            10px;
 }
 
-h2 {
-  font-family:               'Great Vibes', serif;
-  font-size:                 1.5rem;
-  color:                     var(--secondary-font-color);
-  margin:                    20px 0 10px 0;
+
+
+.demo {
+	width:                     90%;
+	height:                    280px;
+	margin:                    20px 0;
 }
 
-p {
-  font-size:                 .85rem;
-  margin:                    10px 0 25px 0;
+.button {
+  display:                   inline-block;
+  width:                     7.5rem;
+	font-size:                 .7rem;
+  padding:                   .3rem 0;
+  border:                    2px solid var(--primary-font-color);
+  border-radius:             1.786rem;
+  text-align:                center;
 }
+
+.button:hover {
+	color:                     #fff;
+	background-color:          var(--primary-font-color);
+	
+}
+
+
+/* ==============
+   SLIDER STYLES
+   ============== */
 
 table {
   margin-top:                20px;
@@ -194,10 +232,7 @@ td {
   border-radius:             50%;
 }
 
-h3 {
-  font-size:                 .7rem;
-  padding:                   10px;
-}
+
 
 .links {
   display:                   block;
@@ -209,6 +244,7 @@ h3 {
   color:                     var(--primary-font-color);
   padding:                   10px;
 }
+
 
 /* =============
    FOOTER STYLES
