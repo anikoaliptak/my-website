@@ -89,7 +89,6 @@ nav li {
   font-size:                 .9rem;
   line-height:               3rem;
   height:                    3rem;
-  border-bottom:             .8px dashed var(--secondary-font-color);
 }
 
 nav a {
@@ -152,10 +151,17 @@ nav a {
 
 .main {
   order:                     1;
-  flex-basis:                75vw;
-  padding:                   10px 20px 20px 50px;
+  flex-basis:                100%;
+  padding:                   20px;
   line-height:               1.5rem;
   letter-spacing:            .02rem;
+}
+
+@media (min-width: 768px) {
+	.main {
+		flex-basis:              75vw;
+		padding:                 10px 20px 20px 50px;
+	}
 }
 
 .main li {
@@ -165,19 +171,43 @@ nav a {
 
 
 .demo {
-	width:                     90%;
-	height:                    280px;
+	width:                     100%;
+	height:                    200px;
 	margin:                    20px 0;
+}
+
+.demo_text_box {
+	width:                     100%;
+	height:                    200px;
+	padding:                   20px;
+}
+
+.demo_text_box h2 {
+	margin:                    0;
+}
+
+@media (min-width: 922px) {
+	.demo_wrapper {
+		display:                 flex;
+		flex-direction:          row;
+	}
+	.demo_wrapper_row_reverse {
+		flex-direction:          row-reverse;
+	}
+	.demo_text_box {
+		margin:                  20px 0;
+	}
 }
 
 .button {
   display:                   inline-block;
-  width:                     7.5rem;
+  width:                     7rem;
 	font-size:                 .7rem;
-  padding:                   .3rem 0;
+  padding:                   .05rem 0;
   border:                    2px solid var(--primary-font-color);
   border-radius:             1.786rem;
   text-align:                center;
+	text-decoration:           none;
 }
 
 .button:hover {
@@ -208,9 +238,14 @@ td {
 
 .profile {
   order:                     2;
-  flex-basis:                25vw;
+  flex-basis:                100%;
   padding:                   0 20px 20px 20px;
-  
+}
+
+@media (min-width: 768px) {
+	.profile {
+		flex-basis:              25vw;
+	}
 }
 
 .profile-card {
