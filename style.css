@@ -31,26 +31,30 @@ img {
 }
 
 a {
+	text-decoration:           none;
 	color:                     var(--primary-font-color);
 }
 
 h2 {
+	text-align:                center;
   font-family:               'Great Vibes', serif;
-  font-size:                 1.5rem;
+  font-size:                 2rem;
   color:                     var(--secondary-font-color);
-  margin:                    20px 0 10px 0;
+  margin:                    30px 0;
 }
 
 h3 {
-	letter-spacing:            .05rem;
-	color:                     var(--light-font-color);
-  font-size:                 .7rem;
-  padding:                   10px;
+	font-size:                 1.2rem;
+	font-family:               'Lora', sans-serif;
+	text-decoration:           underline;
+	color:                     var(--secondary-font-color);
 }
+
+
 
 p {
   font-size:                 .85rem;
-  margin:                    10px 0 25px 0;
+  margin:                    25px 0;
 }
 
 
@@ -68,6 +72,15 @@ h1 {
 	font-family:               'Great Vibes', serif;
 	font-size:                 3.8rem;
 	color:                     var(--secondary-font-color);
+}
+
+h4 {
+	font-family:               'Lora', sans-serif;
+	letter-spacing:            .05rem;
+	color:                     var(--light-font-color);
+  font-size:                 .7rem;
+  padding:                   10px;
+	margin-bottom:             30px;
 }
 
 
@@ -92,8 +105,6 @@ nav li {
 }
 
 nav a {
-  text-decoration:           none;
-  color:                     var(--primary-font-color);
   display:                   block;
 }
 
@@ -221,8 +232,8 @@ nav a {
    SLIDER STYLES
    ============== */
 
-table {
-  margin-top:                20px;
+.table_wrapper {
+  padding-top:                2.5rem;
 }
 
 td {
@@ -264,7 +275,6 @@ td {
 .profile-photo {
   border:                    5px;
   border-color:              var(--primary-font-color);
-  border-radius:             50%;
 }
 
 
