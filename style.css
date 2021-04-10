@@ -3,9 +3,9 @@
    ========= */
 
 :root {
-	--primary-font-color:      #312332;
-	--secondary-font-color:    #413136;
-	--light-font-color:        rgba(178,172,186,1);
+	--primary-font-color:      rgba(42, 39, 44, .7);
+	--secondary-font-color:    rgb(49, 82, 87);
+	--light-font-color:        rgb(162,128,108);
 }
 
 
@@ -33,28 +33,31 @@ img {
 a {
 	text-decoration:           none;
 	color:                     var(--primary-font-color);
+	text-shadow:               .3px .3px;
 }
 
 h2 {
 	text-align:                center;
   font-family:               'Great Vibes', serif;
-  font-size:                 2rem;
+  font-size:                 2.5rem;
   color:                     var(--secondary-font-color);
   margin:                    30px 0;
 }
 
 h3 {
-	font-size:                 1.2rem;
+	font-size:                 1.4rem;
 	font-family:               'Lora', sans-serif;
-	text-decoration:           underline;
-	color:                     var(--secondary-font-color);
+	color:                     var(--light-font-color);
+	text-shadow:               .5px .5px;
 }
 
 
 
 p {
-  font-size:                 .85rem;
+  font-size:                 1rem;
   margin:                    25px 0;
+	color:                     var(--primary-font-color);
+	text-shadow:               .3px .3px;
 }
 
 
@@ -78,6 +81,7 @@ h4 {
 	font-family:               'Lora', sans-serif;
 	letter-spacing:            .05rem;
 	color:                     var(--light-font-color);
+	text-shadow:               .5px .5px;
   font-size:                 .7rem;
   padding:                   10px;
 	margin-bottom:             30px;
@@ -146,7 +150,6 @@ nav a {
   display:                   flex;
   flex-wrap:                 wrap;
   align-items:               stretch;
-  color:                     var(--secondary-font-color);
 }
 
 @media (min-width: 768px) {
@@ -179,6 +182,11 @@ nav a {
   padding-bottom:            10px;
 }
 
+.mail,
+.services {
+	font-weight:               700;
+}
+
 
 
 .demo {
@@ -193,8 +201,9 @@ nav a {
 	padding:                   20px;
 }
 
-.demo_text_box h2 {
-	margin:                    0;
+.demo_h2 {
+	font-size:                 1.7rem;
+
 }
 
 @media (min-width: 922px) {
@@ -215,7 +224,7 @@ nav a {
   width:                     7rem;
 	font-size:                 .7rem;
   padding:                   .05rem 0;
-  border:                    2px solid var(--primary-font-color);
+  border:                    2px solid var(--secondary-font-color);
   border-radius:             1.786rem;
   text-align:                center;
 	text-decoration:           none;
@@ -223,7 +232,7 @@ nav a {
 
 .button:hover {
 	color:                     #fff;
-	background-color:          var(--primary-font-color);
+	background-color:          var(--secondary-font-color);
 	
 }
 
@@ -296,7 +305,7 @@ td {
    ============= */
 
 .footer-wrap {
-  background-color:          var(--primary-font-color);
+  background-color:          var(--secondary-font-color);
   font-family:               'Lora', serif;
   display:                   block;
   color:                     #fff;
